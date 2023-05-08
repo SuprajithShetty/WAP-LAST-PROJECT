@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
+  <title>Weather App</title>
+  <link rel="icon" type="image/x-icon" sizes="36x36" href="download.ico">
+</head>
+<body>
+
+
+  <nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.rvce.edu.in/">RV Weathering Website</a>
+      <form class="d-flex" role="search">
+        
+        <button class="btn btn-outline-primary" ><a href="login/login.html">LogIn</a></button>
+      </form>
+    </div>
+  </nav>
+          
+          <form id="navSearch" class="form-inline my-2 my-lg-0" action="javascript:void(0);">
+            <input class="form-control mr-sm-2" type="text" id="searchBar"  placeholder="Search Location">
+            <input class="btn btn-outline-success my-2 my-sm-0" id="search2" type="submit" value="Search!">
+          </form>
+        </div>
+      </nav>
+    <main id="main" class="position-relative p-5">
+        <div class="text-center bg-dark p-3 w-75 mx-auto d-flex flex-column">
+            <h1 class="text-white-50">Search</h1>
+            <h5 class="text-white-50">WYour Location Weather</h5>
+            <form id="searching" action="javascript:void(0);">
+              <input class="form-class w-50" type="search" id="search" placeholder="Input your search keyword" name="search">
+              <br><br>
+              <input type="submit" class="btn btn-warning" id="submit" value="Weather" name="weather">
+              <input type="button" class="btn btn-warning" id="submit2" value="Forecast!" name="forecast">
+            </form>
+        </div>
+    </main>
+
+    <div class="row">
+
+      <div class="temperature col-md-4">
+        <h2 class="chakra-heading css-ribni4">28<sup>o</sup>C</h2>
+        <sup>o</sup>
+        <div id="chakra-toast-portal"><ul id="chakra-toast-manager-top" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"></ul><ul id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"></ul></div>
+
+      </h2>
+      <h2 class="chakra-heading css-1dklj6k">Rain</h2>
+      </div>
+  
+  
+      <div class="details col-md-4">
+
+        <div id="chakra-toast-portal"><ul id="chakra-toast-manager-top" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"></ul><ul id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"></ul></div>
+  
+        <h2 class="chakra-heading css-ribni4">28<sup>o</sup>C</h2>
+        <sup>o</sup>
+  
+  
+      </div>
+  
+      <div class="googlmaps col-md-4">
+  
+        <div class="css-1bssmm0"><div class="css-ckyhk3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-s5h7e7" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"></path></svg></div><h2 class="chakra-heading css-1dklj6k">Kanija Bhavan</h2><h2 class="chakra-heading css-ribni4">28<sup>o</sup>C</h2><h2 class="chakra-heading css-1dklj6k">Rain</h2></div>
+        <h2 class="chakra-heading css-ribni4">28<sup>o</sup>C</h2>
+        <sup>o</sup>
+        <h5 class="card-title text-center text-warning" id="title"></h5>
+          <div class="d-flex flex-row justify-content-around">
+  
+      </div>
+
+    </div>
+
+   
+
+    <section id="section" class="bg-dark p-4">
+      <div class="card bg-dark text-white w-50 m-auto">
+        <div id="image"></div>
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center text-warning" id="title"></h5>
+          <div class="d-flex flex-row justify-content-around">
+            <ul class="list-group list-unstyled">
+              <li class="list-group-item" id="temp"></li>
+              <li class="list-group-item" id="feel"></li>
+              <li class="list-group-item" id="desc"></li>
+              <li class="list-group-item" id="pressure"></li>
+              <li class="list-group-item" id="humidity"></li>
+              <li class="list-group-item" id="sunrise"></li>
+            </ul>
+            <ul class="list-group list-unstyled">
+              <li class="list-group-item" id="minTemp"></li>
+              <li class="list-group-item" id="maxTemp"></li>
+              <li class="list-group-item" id="wind"></li>
+              <li class="list-group-item" id="windDir"></li>
+              <li class="list-group-item" id="clouds"></li>
+              <li class="list-group-item" id="sunset"></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text-center">
+            <div class="d-inline"><input type="submit" id="farCel" class="btn btn-warning" value="Celsius/Farenheit"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="bg-dark pt-3">
+      <h3 id="cityName" class="text-center text-warning"></h3>
+      <div class="row d-flex justify-content-around w-100" id="row"></div>
+    </section>
+    <footer class="footer bg-dark p-2">
+        <div class="container">
+          <div class="developer">
+                <hr class="solid">
+                <h6>Designed And Developed By :</h6>
+                <div class="develop">
+                    <p><strong><a 
+                                alt="visit profile"> Suprajith M N & Srijith V</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script type="text/javascript"></script>
+</body>
+</html>
